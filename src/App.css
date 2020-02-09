@@ -1,38 +1,92 @@
+html {
+  height: 100vh;
+  overflow: hidden;
+}
+body {
+  margin: 0;
+  background-color: lightgrey;
+}
+
 .App {
-  text-align: center;
+  margin: auto;
+  margin-top: 12%;
+  width: 60%;
+  height: 65vh;
+  overflow: scroll;
+  background-color: white;
+  border-radius: 10px;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
-}
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+.studentInfoSection {
   display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
+  padding: 5%;
+  border-bottom: 1px solid lightgrey;
+}
+
+.studentInfo {
+  padding: 1.2rem;
+  font-family: 'Raleway', sans-serif;
+  color: gray;
+  line-height: 8px;
+}
+
+ .studentNameAndInfo > h2 {
+  text-transform: uppercase;
+  margin-left: 1rem;
+  font-size: 1.5rem;
+}
+
+.studentInfoSection > img {
+  width: 20%;
+  height: 20%;
+  border-radius: 50%;
+  border: 1px solid lightgrey;
+  max-height: 20%;
+}
+
+input {
+  margin: 1rem;
+  width: 100%;
+  font-size: 1rem;
+  padding: .5rem;
+  border: 0;
+  outline: 0;
+  border-bottom: 1px solid lightgrey;
+}
+
+#name-input {
+  width: 100%;
+  font-size: 1rem;
+  padding: .5rem;
+  border: 0;
+  outline: 0;
+  border-bottom: 1px solid lightgrey;
+}
+
+.expand-btn{
+  height: 5rem;
+  width: 4.5rem;
+  background: none;
+  border: none;
+}
+
+.expand-btn:hover{
+  cursor: pointer;
+}
+
+#buttonImg{
+  height: 5rem;
+  width: 4.5rem;
+}
+
+#tag {
+  text-align: center;
+  padding: 5px;
+  margin: .5rem;
+  background-color: gray;
+  width: 70px;
+  height: 30px;
   color: white;
-}
-
-.App-link {
-  color: #61dafb;
-}
-
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+  border-radius: 10px;
 }
